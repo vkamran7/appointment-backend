@@ -1,0 +1,13 @@
+docker build -t docker-java .
+docker tag docker-java kamranvalizada/docker-demo-java
+docker push kamranvalizada/docker-demo-java
+
+delete local images and container the push local image to docker hub
+
+docker run --name docker-java -p 8080:8080 kamranvalizada/docker-demo-java
+
+
+docker start -ai <container_name> -- to start stopped container, -ai is for seeing the output
+
+
+

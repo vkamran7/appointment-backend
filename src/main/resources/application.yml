@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: h2
+    active: mysql
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
@@ -11,7 +11,7 @@ spring:
     min-idle: 15
 
 server:
-  port: 8080 
+  port: 8080
 
 security:
   jwt:
